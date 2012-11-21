@@ -1,0 +1,49 @@
+<div>
+  <h2>Compra de Tiquete</h2>
+	<table>
+		<tr>
+			<td>Cédula</td>
+			<td><input value="{{=$.customer.id}}" onChange="framux.bind('$.customer.id',this)"/></td>
+			
+			<td>Nombre</td>
+			<td><input value="{{=$.customer.name}}" onChange="framux.bind('$.customer.name',this)"/></td>
+		</tr>
+		
+		<tr>
+			<td>Teléfono</td>
+			<td><input value="{{=$.customer.telephone}}" onChange="framux.bind('$.customer.telephone',this)"/></td>
+			
+			<td>Dirección</td>
+			<td><input value="{{=$.customer.address}}" onChange="framux.bind('$.customer.address',this)"/></td>			
+		</tr>
+		
+		<tr>
+			<td>Número de Tarjeta:</td>
+			<td><input value="{{=$.customer.cardnumber}}" onChange="framux.bind('$.customer.cardnumber',this)"/></td>
+		
+			<td>Tipo de Tarjeta</td>
+			<td><input value="{{=$.customer.cardType}}" onChange="framux.bind('$.customer.cardType',this)"/></td>
+		</tr>
+	</table>
+	
+	<br>
+	<h3>Ticket</h3>
+	<br>
+	
+	<select>
+		{{~$.locations:location}}
+			<option value="{{=location.locationType}}" onClick="framux.bind('$.ticket.locationType',this)">{{=gaLocationTypes[location.locationType]}}</option>
+		{{~}}
+	</select>
+	<br>
+	<label>Numerada</label>
+	<input value="{{=$.ticket.numbered}}" onChange="framux.bind('$.ticket.numbered',this)" type="text"/>
+	<label>Cantidad</label>
+	<input value="{{=$.ticket.quantity}}" onChange="framux.bind('$.ticket.quantity',this)" type="text"/>
+
+	<br>
+
+	<a href="#ticketsInsert">
+		<input type="button" value="Comprar" id="button"/>
+	</a>
+</div>

@@ -1,0 +1,7 @@
+<div>
+	<label>Nombre de usuario</label>
+	<input type="text" value="{{=$.user.username}}" onChange="framux.bind('$.user.username',this)"/>
+	<label>Contraseña</label>
+	<input type="password" value="{{=$.user.password}}" onChange="framux.bind('$.user.password',this)"/>
+	<a href="#login"><button>Ingresar</button></a>
+</div>

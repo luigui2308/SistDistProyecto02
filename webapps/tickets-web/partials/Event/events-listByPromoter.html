@@ -1,0 +1,26 @@
+<div>
+	<h2>Listado de eventos</h2>
+	<table width="100%">
+		<tr><th>Nombre</th><th>Tipo</th><th>Artistas</th><th>Fecha</th><th>Lugar</th></tr>
+		{{~$.events:event}}
+		<tr>
+			<td>{{=event.name}}</td>
+			<td>{{=event.eventType}}</td>
+			<td>{{=event.artists}}</td>
+			<td>{{=event.date}}</td>
+			<td>{{=event.place}}</td>
+			<td>
+				<a href="#events/{{=event.code}}">
+					<button>Detalle</button>
+				</a>
+				<a href="#eventsDelete/{{=event.code}}">
+					<button>Eliminar</button>
+				</a>
+			</td>
+		</tr>
+		{{~}}
+	</table>
+	<a href="#eventsNew">
+		<button>Agregar</button>
+	</a>
+</div>

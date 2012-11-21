@@ -1,0 +1,25 @@
+<div>
+  <h2>Listado de Promotores</h2>
+  <br/>
+  <table>
+    <thead>
+      <th>Nombre</th><th>Dirección</th><th>Telefono</th><th>Banco</th><th>Comisión</th><th>Usuario</th><th>Acción</th>
+    </thead>
+    {{~$.promoters:promoter}}
+    <tr>
+      <td>{{=promoter.name}}</td>
+      <td>{{=promoter.address}}</td>
+      <td>{{=promoter.telephone}}</td>
+      <td>{{=promoter.bank}}</td>
+	  <td>{{=promoter.commision}}</td>
+      <td>{{=promoter.username}}</td>
+      <td><a href="#promoters/{{=promoter.code}}">
+        <input type="button" value="Detalle"/>
+      </a></td>
+    </tr>
+    {{~}}
+  </table>
+  <a href="#promotersNew">
+    <input type="button" value="Agregar" id="button"/>
+  </a>
+</div>

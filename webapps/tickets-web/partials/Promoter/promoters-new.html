@@ -1,0 +1,36 @@
+<div>
+  <h2>Nuevo Promotor</h2>
+	<table>
+		<tr>
+			<td>Nombre</td>
+			<td><input value="{{=$.promoter.name}}" onChange="framux.bind('$.promoter.name',this)"/></td>
+		
+			<td>Teléfono</td>
+			<td><input value="{{=$.promoter.telephone}}" onChange="framux.bind('$.promoter.telephone',this)"/></td>
+		</tr>
+		
+		<tr>
+			<td>Dirección</td>
+			<td colspan="3"><input value="{{=$.promoter.address}}" onChange="framux.bind('$.promoter.address',this)"/></td>			
+		</tr>
+		
+		<tr>
+			<td>Banco</td>
+			<td><input value="{{=$.promoter.bank}}" onChange="framux.bind('$.promoter.bank',this)"/></td>
+			
+			<td>Comisión</td>
+			<td><input value="{{=$.promoter.commision}}" onChange="framux.bind('$.promoter.commision',this)"/></td>
+		</tr>
+		
+		<tr>
+			<td>Nombre de Usuario</td>
+			<td><input value="{{=$.promoter.username}}" onChange="framux.bind('$.promoter.username',this)"/></td>
+		
+			<td>Contraseña</td>
+			<td><input value="{{=$.promoter.password}}" onChange="framux.bind('$.promoter.password',this)"/></td>
+		</tr>
+	</table>
+	<a href="#promotersInsert">
+		<input type="button" value="Agregar" id="button"/>
+	</a>
+</div>

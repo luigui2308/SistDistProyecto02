@@ -1,0 +1,75 @@
+<service>
+	<parameter name="ServiceClass" locked="false">servicio.Ticket</parameter>
+	<operation name="CustomersUpdate">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="TicketsInsert">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="TicketsDetail">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="CustomersDetail">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="NumberedTicketsListByTicketCode">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="RolesByUsersDetail">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="UsersCredentials">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="EventsList">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="EventsListByPromoterCode">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="EventsDetail">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="LocationsListByEventCode">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="TicketsListByEventCode">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="TicketsInsert">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="LocationsSave">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="EventsSave">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="EventsDelete">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="LocationsDeleteByEventCode">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="PromotersList">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="PromotersDetail">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="PromotersDetailByUsername">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="UsersDetail">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="PromotersInsert">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="PromotersUpdate">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+	<operation name="PromotersDelete">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</operation>
+</service>

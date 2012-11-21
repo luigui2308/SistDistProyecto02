@@ -1,0 +1,50 @@
+<div>
+	<fieldset align="center">
+		<legend>Factura de Tiquete</legend>
+		
+		<table width="100%">
+			
+			<tr>
+				<td>Nombre: {{=$.customer.name}}</td>
+				<td>N&uacute;mero de C&eacute;dula: {{=$.customer.id}}</td>
+				
+			</tr>
+			
+			<tr>
+				<td>Tel&eacute;fono: {{=$.customer.telephone}}</td>
+				<td>Direci&oacute;n: {{=$.customer.address}}</td>
+				
+			</tr>
+			
+			<tr>
+				<td>Tipo de tarjeta: {{=$.customer.cardType}}</td>
+				<td>N&uacute;mero de tarjeta: {{=$.customer.cardnumber}}</td>
+			</tr>
+		
+			<tr>
+				<td>Tiquete: {{=$.ticket.code}}</td>
+				<td>Evento: {{=$.event.name}}</td>
+			</tr>
+			
+			<tr>
+				<td>Fecha de compra: {{=$.ticket.date}}</td>
+				<td>Numeradas: </td>
+			</tr>
+			
+			<tr>
+				<td>Cantidad: {{=$.ticket.quantity}}</td>
+				<td>Total a pagar: {{=$.ticket.amount}}</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center">
+					<a href="#events" >
+						<button>Regresar</button>
+					</a>
+				</td>
+			</tr>
+			
+		</table>
+		
+	</fieldset>
+</div>
